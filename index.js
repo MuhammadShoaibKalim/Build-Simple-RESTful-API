@@ -29,6 +29,7 @@ mongoose.connect(dbUrl)
   });
 
 
+
 // Default route
 app.get('/', (req, res) => res.send('hello shoaib'));
 
