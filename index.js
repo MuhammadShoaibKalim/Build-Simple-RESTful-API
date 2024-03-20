@@ -12,10 +12,6 @@ const port = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
-
-
-
 // MongoDB connection
 /// MongoDB connection
 const dbUrl = process.env.MONGODB_URI || 'mongodb://localhost:27017/shoaib';
