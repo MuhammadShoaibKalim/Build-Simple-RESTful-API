@@ -1,6 +1,5 @@
 // contactModel.js
 const mongoose = require('mongoose');
-
 // Setup schema
 const contactSchema = mongoose.Schema({
     name: {
@@ -18,7 +17,6 @@ const contactSchema = mongoose.Schema({
         default: Date.now
     }
 });
-
 // Export Contact model
 const Contact = mongoose.model('contact', contactSchema);
 module.exports = Contact;
@@ -27,12 +25,9 @@ module.exports = Contact;
 // module.exports.getContacts = function (callback, limit) {
 //     Contact.find(callback).limit(limit);
 // };
-
-
 // module.exports.getContacts = function (limit) {
 //     return Contact.find().limit(limit).exec();
 // };
-
 module.exports.getContacts = function (limit) {
     return Contact.find().limit(limit).exec();
 };
